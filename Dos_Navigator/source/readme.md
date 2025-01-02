@@ -1,5 +1,5 @@
 # DOS Navigator aka DosRun
-Source for Dos DosRun the DOS Navigator
+Source for DosRun (the DOS Navigator)
 
 **A DOS Menuing System**  
 
