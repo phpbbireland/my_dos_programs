@@ -1,7 +1,7 @@
 # DOS Navigator
 Source for Dos Navigator
 
-** A DOS Menuimg System **  
+**A DOS Menuimg System**  
 
 + Supports Multiple Menus...
 + Menus can have Multiple items...
