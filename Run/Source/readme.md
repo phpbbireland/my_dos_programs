@@ -1,6 +1,6 @@
 # Run
 
-A DOS commandline utility to run any program on your drive (.exe .com .bat)...  
+A DOS command-line utility to run any program on your drive (.exe .com .bat)...  
 Example: run program_name, or run rhide.exe, run tc.exe  
 
 + Runs any program on you drive...
@@ -12,7 +12,6 @@ Example: run program_name, or run rhide.exe, run tc.exe
 
 Example:
 run program_name or run program_name.exe or program_name arg1, arg2...
-
 
 **Source files**
 
