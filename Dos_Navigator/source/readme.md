@@ -1,5 +1,5 @@
-# DOS Navigator
-Source for Dos Navigator
+# DOS Navigator aka DosRun
+Source for Dos DosRun the DOS Navigator
 
 **A DOS Menuing System**  
 
@@ -12,5 +12,5 @@ Source for Dos Navigator
 + The only TSR that can run games requiring all available memory, can even run Doom...
 
 **The Magic**  
-Although the DOS Navigator is a TSR, it exits before launching a program, that is, it takes up no memory...
+Although the DOS Navigator is a TSR, it exits before launching a program, that is, it takes up no memory.  
 No other menuing system or utility at the time did this, that's why DosRun could run any program you could run from the command line...
