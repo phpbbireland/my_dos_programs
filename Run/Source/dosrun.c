@@ -1,4 +1,5 @@
 // Modified 20/11/96 6:40 P.M. //
+// Copyright Michael O'Toole 1984-2025 //
 
 #define NODEBUG    //use to disallow tc debug
 #define SHAREWARE  //compile directive for shareware version
@@ -30,7 +31,6 @@
 #include <myerrors.h>
 #include <indexes.h>
 #include <files.h>
-
 
 #include "dosrun.h"
 #include "dosrun.men"
@@ -75,9 +75,7 @@ char TOPLINE2[78] = "Licenced To: ";
 FILE *doshelp,*txtfile;
 
 struct text_info ti;
-
 char *ThisLine = "";
-
 
 void main(argc,argv)int argc; char *argv[];
 {
