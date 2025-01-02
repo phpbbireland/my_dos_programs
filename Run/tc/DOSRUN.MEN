@@ -1,0 +1,163 @@
+//int MaxMenus;
+
+char *menubar[] =
+{
+	" Programmes ",
+	" Menus ",
+	" Utilities ",
+	" Zip-Lha-Shrink ",
+	" Quit ",
+	NULL
+};
+
+char *menu1[]=
+{
+ " ‘9A‘‘dd Programme......   F2",
+ " ‘9D‘‘elete Programme...   F3",
+ " ‘9E‘‘dit Programme.....   F4",  
+ " ‘9F‘‘ind Programme.....   F5",
+ " ‘9M‘‘ove Programme.....   F6",
+ " ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+ " ‘9P‘‘assword Protect...   F7",
+ " N/A................   F8",
+ " ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+ " Edit e‘9x‘‘isting Path.   F9",
+ " Auto‘9S‘‘earch for Path  F10",
+ " ‘9W‘‘indows 3.XX Option ALTW",
+ NULL
+};
+
+static char *menu2[]=
+{
+  " ‘9A‘‘dd New Menu...   Alt+F2",
+  " ‘9D‘‘elete Menu....   Alt+F3",
+  " ‘9E‘‘dit Menu Name.   Alt+F4",  
+  " ‘9F‘‘ind Line / Menu  Alt+F5",
+  " ‘9L‘‘ist All Menus    Alt+F6",
+  " ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ", 
+  " ‘9P‘‘assword Protect  Alt+F7",
+  " N/A.............  Alt+F8",
+  " ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ", 
+  " N/A.............  Alt+F9",
+  " N/A............. Alt+F10",
+	NULL
+};
+
+static char *menu3[] =
+{
+	" ‘eM‘‘aster Password....    Ctrl+F1",
+	" ‘eP‘‘rint Info..........   Ctrl+F2",
+	" ‘eC‘‘redits / Updates...   Ctrl+F3",
+	" ‘eA‘‘ctivate Mouse Driver  Ctrl+F4",
+	" ‘eD‘‘eactivate Mouse.....  Ctrl+F5",
+	" ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+	" ‘eS‘‘how DOS Screen....    Ctrl+F6",
+	" ‘eF‘‘astkey Summary.....   Ctrl+F7",
+	" ‘eU‘‘pdate Datafiles.....  Ctrl+F8",
+	" Confi‘eg‘‘ure Dosrun.....  Ctrl+F9",
+	" Tempory ‘eL‘‘ock......... Ctrl+F10",
+	" ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+	" L‘ei‘‘cence Details..        ALT+L",
+	" ‘eR‘‘ead DosRunText File     ALT+R",
+
+	NULL
+};
+
+static char *menu4[] =
+{
+	" ‘aZ‘‘ip Files..........",
+	" ‘9P‘‘k Zip Files.......",
+	" ‘cL‘‘ha Files..........",
+	" ‘dE‘‘ncrypt Files......",
+	" ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+	" ‘eA‘‘rchive............",
+	NULL
+};
+
+static char *menu5[] =
+{
+	" ‘9Q‘‘uit........   ESC",
+	" ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ",
+	" ‘9S‘‘hell to DOS      ",
+	" ‘9N‘‘etworking Files  ",
+	NULL
+};
+
+
+
+static char *nsm[]=
+{
+	" ‘fSetup DosRun ",
+	" ‘fBackup/Restore ",
+	" ‘fCopy Menus to Floppy ? ",
+	" ‘cÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ",//a
+	" ‘fUpdate Dosrun Datafiles ",
+	" ‘cÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ",
+	" ‘fFast File Find Utility (Look) ",
+	" ‘fHelp for the Dos Navigator / Run95 ",  
+	" ‘cÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ",//b look good
+	" ‘bAllow Executable Encryption? (Please Read Run95.txt) ",
+
+  NULL
+};
+static char *nsmh[]=
+{
+	" Sets up DosRun Options ",
+	" Backup or Restore All Menus ",
+	" Make a copy of your Menus on a Floppy ",
+	" ",
+	" Use this if you have added any new programmes ",
+	" ",
+	" Not available ",
+	" To be advised ",
+	" ",//b look good
+	" Will allow you to hide any Executable file so it can only be used with Dosrun ",
+	NULL
+};
+
+static char *Zips[]=
+{
+	" ‘bZ‘‘ip ",
+	" ‘bP‘‘kzip ",
+	" ‘bL‘‘ha ",
+	" ‘bE‘‘ncryption ",
+	" ‘bD‘‘ecrypt ",
+	NULL
+};
+
+
+static char *dsm[]=
+{
+  " Quick Command ? ",
+  " Copy File(s) ",
+  " Move File(s) ",
+  " Delete File(s) ",
+  " Remove a Directory ",
+  " Microsoft Backup ",
+  " Defragment Files on HardDisk ",
+	" Copy A Floppy Disk A: -> A:  ",
+	" Edit (The Dos Little Editor) ",
+	" Check Your Memory? ",  
+	" Make a Bootable Disk ",
+	" Microsoft Anti-Virus Tool ",
+	" Use Microsoft Diagnostics Tool ",
+	NULL
+};
+
+static char *dsmh[]=
+{
+	"‘bQuick Command:‘‘ Resident Dos Command.. Example: Dir, Tree, etc.. ",
+	"‘bExample: ‘‘ COPY C:\\DOS\\MYFILE.DAT A:\\NEW\\",
+	"‘bExample: ‘‘ MOVE C:\\DOS\\MYFILE.* C:\\NEW\\",
+	"‘bExample: ‘‘ DEL C:\\DOS\\MYFILE.* ",
+	"‘bExample: ‘‘ (First) DEL C:\\DOS\\MYDIR (Then) RD C:\\DOS\\MYDIR",
+	"‘bExample: ‘‘ MSBACKUP",
+	"‘bExample: ‘‘ DEFRAG",
+	"‘bExample: ‘‘ COPY A:\\*.* A:",
+	"‘bExample: ‘‘ EDIT (Programme Name)",
+	"‘bExample: ‘‘ MEM /C/P",
+	"‘bExample: ‘‘ FORMAT A: /S (Note this will Delete all files on A)",
+	"‘bExample: ‘‘ MSAV or SCAN C: for Scan programme",
+	"‘bExample: ‘‘ MicroSoft Diagnostics tool (MSD)",
+NULL
+};
