@@ -88,16 +88,16 @@ void depth_search(char *dir, char *name)
 	char dta[43];
 
 	int flag;
-  int disk;
+	int disk;
 	static int oldx;
-  static int oldy;
+	static int oldy;
 
 	disk = getdisk();
 	sprintf(filename,"%s\\%s",dir,name);
 	set_dta(dta);
 	flag = FIRST;
 	textcolor(WHITE);
-  CursorOff();
+  	CursorOff();
 
 	while(search(filename,flag,AFILE))
 	{
@@ -118,7 +118,7 @@ void depth_search(char *dir, char *name)
 		flag = NEXT;
 		if(!streql(".",dta+30) && !streql("..",dta+30))
 		{
-	    sprintf(dirname,"%s\\%s",dir,dta+30);
+	    		sprintf(dirname,"%s\\%s",dir,dta+30);
 			depth_search(dirname,name);
 		}
 		set_dta(dta);
@@ -161,7 +161,7 @@ void main(argc,argv)int argc; char *argv[];
 	cprintf("           DOSRUN, Advanced Setup (C) M.O'TOOLE 1995 Version 7.00\n\r");
 	textcolor(YELLOW);
 
-  //cprintf("OK = %s\n\r%s\n\r %d",temp,argv[1],lk); GetKey(); exit(0);
+  	//cprintf("OK = %s\n\r%s\n\r %d",temp,argv[1],lk); GetKey(); exit(0);
 
 	if(lk==1)	fileone = fopen("C:\\DOS\\MP3S.M3U","wt+");
 	else fileone = fopen("C:\\DOS\\DOSRUN.DAT","wt+");
