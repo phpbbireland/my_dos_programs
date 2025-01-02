@@ -3,6 +3,7 @@
 
 #define NODEBUG    //use to disallow tc debug
 #define SHAREWARE  //compile directive for shareware version
+#define OPENSOURCE //compile directive for open source version 
 
 #include <ctype.h>
 #include <bios.h>
