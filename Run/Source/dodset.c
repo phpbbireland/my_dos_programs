@@ -62,7 +62,7 @@ search(char *fname, int flag, int type)
 	union REGS regs;
 
 	regs.h.ah = 0x4e + flag;	/* ah = 4E for find first & 4F for next */
-	regs.x.cx = type;           /* cx = attribute to use ?? */
+	regs.x.cx = type;		/* cx = attribute to use ?? */
 	regs.x.dx = (int)fname;
 	intdos(&regs,&regs);
 	if(regs.x.cflag == 1) return(FALSE);
